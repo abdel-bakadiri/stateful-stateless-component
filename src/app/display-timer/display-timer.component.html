@@ -1,0 +1,4 @@
+<div class="timer" *ngIf="time; else load">{{ minutes }} : {{ secondes }}</div>
+<ng-template class="timer" #load>
+  <div class="timer">loading...</div>
+</ng-template>

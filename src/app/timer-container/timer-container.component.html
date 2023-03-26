@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Timer</h1>
+  <app-progress-bar [progress]="timeService.progress"></app-progress-bar>
+  <app-display-timer [time]="timeService.countDown"></app-display-timer>
+  <div class="group-btn">
+    <button class="btn-pause-start" (click)="handleToggleTimer()">
+      {{ timeService.isPaused ? "Pause Timer" : "Start Timer" }}
+    </button>
+    <button class="btn" (click)="handleResetTimer()">Reset Timer</button>
+  </div>
+</div>
